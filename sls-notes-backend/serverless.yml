@@ -16,8 +16,8 @@ provider:
 resources:
   Resources:
     NotesTable:
-      Type: AWS: DynamoDB::Table
-      DeletionPolicy: Reatin
+      Type: AWS::DynamoDB::Table
+      DeletionPolicy: Retain
       Properties:
         TableName: ${self:provider.environment.NOTES_TABLE}
         AttributeDefinitions:
